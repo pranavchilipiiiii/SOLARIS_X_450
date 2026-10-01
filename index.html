@@ -1141,8 +1141,7 @@ if (countEls.length && 'IntersectionObserver' in window) {
   countEls.forEach((el) => countObserver.observe(el));
 }
 
-// Video sections: fade/slide in once, and pause playback when scrolled
-// out of view (resume when visible again) to avoid wasting resources.
+\
 const videoWraps = document.querySelectorAll('.reveal-video');
 if (videoWraps.length) {
   const videoObserver = new IntersectionObserver((entries) => {
